@@ -88,11 +88,5 @@ This file can be opened in any browser and supports zooming, node selection, and
 - Biomedical literature mining
 - Genomics and cancer research
 - Domain-specific knowledge graph construction
-- Preprocessing for ontology alignment or downstream RAG systems
+- Pre-processing for ontology alignment or downstream RAG systems
 
-## Future extensions
-
-- Integration with SciSpaCy biomedical NER
-- Improved relation extraction patterns
-- Neo4j export support
-- Hybrid rule-based and LLM-based extraction
