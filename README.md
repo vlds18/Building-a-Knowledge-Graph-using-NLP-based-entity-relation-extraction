@@ -1,4 +1,4 @@
-# PDF-Based Knowledge Graph Construction with spaCy, PyPDF2, and PyVis
+# PDF-based Knowledge Graph Construction with spaCy, PyPDF2, and PyVis
 
 This repository implements an end-to-end pipeline for extracting structured information from scientific PDF documents and converting it into a lightweight knowledge graph. The workflow performs PDF text extraction, sentence segmentation, rule-based entity and relation extraction, triplet construction, and interactive graph visualization.
 
@@ -62,6 +62,9 @@ spaCy's Matcher identifies the root verb and optional modifiers (prepositions, a
 ### 5. Triplet Assembly
 Each sentence yields a candidate triple:
 
+```bash
+(subject, relation, object)
+```
 
 These are stored in a pandas DataFrame after filtering incomplete entries.
 
@@ -69,6 +72,9 @@ These are stored in a pandas DataFrame after filtering incomplete entries.
 Triples are rendered as an interactive network using PyVis.
 The output is saved as:
 
+```bash
+kg.html
+```
 
 This file can be opened in any browser and supports zooming, node selection, and tooltips.
 
